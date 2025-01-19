@@ -1,0 +1,9 @@
+{
+  "url": "https://automationexercise.com/",
+  "browser": "chrome",
+  "url_register_user": "https://automationexercise.com/login",
+  "url_add_products": "https://automationexercise.com/products",
+  "url_view_and_cart_brands_products": "https://automationexercise.com/products",
+  "url_verify_scroll_up": "https://automationexercise.com/",
+  "url_contact_us_form": "https://automationexercise.com/contact_us"
+}
