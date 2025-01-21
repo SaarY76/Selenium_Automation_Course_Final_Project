@@ -2,13 +2,11 @@ package all.pages;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
 import java.util.List;
@@ -108,12 +106,56 @@ public class BasePage {
     }
 
 
+    /**
+     * Scrolls the specified element into view using JavaScript.
+     *
+     * @param locator The locator used to find the element to scroll into view.
+     */
     public void scrollToElement(By locator) {
         // Find the element using the provided locator
         WebElement element = driver.findElement(locator);
 
         // Scroll the element into view using JavaScript
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    /**
+     * Uploads a file to an input element.
+     *
+     * @param locator  The locator used to find the file input element.
+     * @param filepath The absolute path to the file to be uploaded.
+     */
+    public void uploadFile(By locator, String filepath) {
+        logger.info("Going to upload a file to WebElement: {} {}", locator, filepath);
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
+        WebElement fileInput = driver.findElement(locator);
+        fileInput.sendKeys(filepath);
+    }
+
+    /**
+     * Finds a submit button and submits the associated form.
+     *
+     * @param locator The locator used to find the submit button element.
+     */
+    public void clickSubmit(By locator) {
+        logger.info("Going to click submit in WebElement: {}", locator);
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
+        WebElement submitButton = driver.findElement(locator);
+        submitButton.submit();
+    }
+
+
+    /**
+     * Handles an alert popup by clicking the "OK" button when two buttons are visible.
+     */
+    public void clickOkButtonInAlert() {
+        // Wait for the alert to be present
+        logger.info("Going to click on OK button in Alert dialog");
+        WebDriverWait alertWait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        Alert alert = alertWait.until(ExpectedConditions.alertIsPresent());
+
+        // Accept the alert by clicking "OK"
+        alert.accept();
     }
 
 }

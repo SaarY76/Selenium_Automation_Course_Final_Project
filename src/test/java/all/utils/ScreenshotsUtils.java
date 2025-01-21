@@ -29,8 +29,16 @@ public class ScreenshotsUtils {
             Files.createDirectories(directoryPath);
         }
 
-        // Saving the screenshot
+        // Construct the destination file path
         Path destinationFilePath = FileSystems.getDefault().getPath(SCREENSHOT_DIR, sanitizedTitle);
+
+        // Check if the file already exists and delete it if necessary
+        if (Files.exists(destinationFilePath)) {
+            Files.delete(destinationFilePath);
+            System.out.println("Existing screenshot deleted: " + destinationFilePath.toString());
+        }
+
+        // Save the new screenshot
         Files.copy(screenshotFile.toPath(), destinationFilePath);
 
         System.out.println("Screenshot saved to: " + destinationFilePath.toString());

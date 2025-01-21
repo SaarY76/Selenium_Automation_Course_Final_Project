@@ -4,6 +4,8 @@ import all.actions.Actions;
 import all.utils.GenerateDriverAll;
 import all.utils.JsonUtils;
 import all.utils.ScreenshotsUtils;
+import io.qameta.allure.*;
+import io.qameta.allure.testng.Tag;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -12,8 +14,8 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class ContactUsTests {
-    WebDriver driver;
-    Actions actions;
+    private WebDriver driver;
+    private Actions actions;
 
     /**
      * Sets up the test environment by initializing the WebDriver and Actions.
@@ -25,14 +27,22 @@ public class ContactUsTests {
         String BROWSER = JsonUtils.readJsonFromFile("browser");
         driver = GenerateDriverAll.initDriver(BROWSER, URL);
         actions = new Actions(driver);
-        ScreenshotsUtils.takeFullPageScreenshot(driver);
+        //ScreenshotsUtils.takeFullPageScreenshot(driver);
     }
 
     /**
-     * Tests the forgot password functionality.
+     * Tests the contact us functionality.
      */
+    @Feature("Contact us flow")
+    @Story("Contact us")
+    @Description("Test the Contact us functionality")
+    @Link("https://automationexercise.com/contact_us")
+    @Tag("Contact us")
+    @Owner("Saar, Alina")
+    @Severity(SeverityLevel.NORMAL)
+    @Step("Contact us form and verify data")
     @Test(description = "testing the contact us functionality", groups = {"regression", "contactUs"})
-    public void contactUs() {
+    public void contactUs() throws IOException {
         assert actions.doContactUs();
     }
 
