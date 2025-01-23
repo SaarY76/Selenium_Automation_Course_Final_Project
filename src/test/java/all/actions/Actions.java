@@ -1,6 +1,7 @@
 package all.actions;
 
 import all.pages.ContactUsPage;
+import all.pages.ProductsPage;
 import all.pages.SignUpPage;
 import all.utils.ExcelUtils;
 import all.utils.JsonUtils;
@@ -18,6 +19,7 @@ public class Actions {
     // All pages
     ContactUsPage contactUsPage;
     SignUpPage signUpPage;
+    ProductsPage productsPage;
     /**
      * Constructor to initialize the Actions class with a WebDriver instance.
      *
@@ -26,6 +28,7 @@ public class Actions {
     public Actions(WebDriver driver) {
         contactUsPage = new ContactUsPage(driver);
         signUpPage = new SignUpPage(driver);
+        productsPage = new ProductsPage(driver);
     }
 
     private void delay () {
@@ -116,9 +119,10 @@ public class Actions {
         logger.info("Clicking on Sign up button");
         signUpPage.clickOnSignup_LoginButton();
 
-        logger.info("Verifying that the text : New User Signup!, text is visible");
-        Allure.step("Verifying that the text : New User Signup!, text is visible");
+        logger.info("Verifying that the text : New User Signup!, is visible");
+        Allure.step("Verifying that the text : New User Signup!, is visible");
         if (!signUpPage.newUserSignupTextIsVisible()) {
+            logger.error("The text : New User Signup!, is not visible");
             return false;
         }
 
@@ -146,5 +150,47 @@ public class Actions {
         Allure.step("Verifying that the error message : Email Address already exist! is visible");
         logger.info("Verifying that the error message : Email Address already exist! is visible");
         return signUpPage.errorMessageVisible();
+    }
+
+    public boolean doViewAndCartBrandProductsFunctionality() throws IOException {
+        Allure.step("Starting to perform View & Cart Brand Products actions");
+        logger.info("Starting to perform View & Cart Brand Products actions");
+
+        Allure.step("Clicking on Products button");
+        logger.info("Clicking on Products button");
+        productsPage.clickOnProductsButton();
+
+        logger.info("Verifying that the div : Brands, is visible");
+        Allure.step("Verifying that the div : Brands, is visible");
+        if (!productsPage.brandsIsVisible()) {
+            logger.error("Brands div is not visible");
+            return false;
+        }
+
+        String firstBrand = "Polo", secondBrand = "Babyhug";
+
+        Allure.step("Clicking on "+ firstBrand +" button");
+        logger.info("Clicking on "+ firstBrand +" button");
+        productsPage.clickOnSpecificBrand(firstBrand);
+
+        logger.info("Verifying that the text : " + firstBrand + ", is visible");
+        Allure.step("Verifying that the text : " + firstBrand + ", is visible");
+        if (!productsPage.verifyBrandChosen(firstBrand)) {
+            logger.error("The text : " + firstBrand + "is not visible");
+            return false;
+        }
+
+        Allure.step("Clicking on "+ secondBrand +" button");
+        logger.info("Clicking on "+ secondBrand +" button");
+        productsPage.clickOnSpecificBrand(secondBrand);
+
+        logger.info("Verifying that the text : " + secondBrand + ", is visible");
+        Allure.step("Verifying that the text : " + secondBrand + ", is visible");
+        if (!productsPage.verifyBrandChosen(secondBrand)) {
+            logger.error("The text : " + secondBrand + "is not visible");
+            return false;
+        }
+
+        return true;
     }
 }

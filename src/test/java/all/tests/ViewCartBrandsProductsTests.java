@@ -3,10 +3,16 @@ package all.tests;
 import all.actions.Actions;
 import all.utils.GenerateDriverAll;
 import all.utils.JsonUtils;
+import io.qameta.allure.*;
+import io.qameta.allure.testng.Tag;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
+import java.io.IOException;
+
+@Epic("View & Cart Brand Products")
 public class ViewCartBrandsProductsTests {
     WebDriver driver;
     Actions actions;
@@ -21,6 +27,32 @@ public class ViewCartBrandsProductsTests {
         String BROWSER = JsonUtils.readJsonFromFile("browser_chrome");
         driver = GenerateDriverAll.initDriver(BROWSER, URL);// navigating to URL
         actions = new Actions(driver);
+    }
+
+    @Description("Testing the Home page visibility")
+    @Link("https://automationexercise.com")
+    @Owner("Saar, Alina")
+    @Severity(SeverityLevel.NORMAL)
+    @Step("Home page first validation")
+    @Test(description = "Testing Home page visibility")
+    public void homePageIsVisible() {
+        assert  actions.isHomePageVisible(" Home");
+    }
+
+    /**
+     * Tests the contact us functionality.
+     */
+    @Feature("View & Cart Brand Products flow")
+    @Story("View & Cart Brand Products")
+    @Description("Test the Sign up functionality")
+    @Link("https://automationexercise.com/products")
+    @Tag("View & Cart Brand Products")
+    @Owner("Saar, Alina")
+    @Severity(SeverityLevel.NORMAL)
+    @Step("View & Cart Brand Products")
+    @Test(dependsOnMethods = "homePageIsVisible", description = "View & Cart Brand Products functionality", groups = {"regression", "view_and_cart_products_functionality"})
+    public void viewAndCartBrandProducts() throws IOException {
+        assert actions.doViewAndCartBrandProductsFunctionality();
     }
 
     /**
