@@ -1,6 +1,7 @@
 {
   "url": "https://automationexercise.com/",
-  "browser": "chrome",
+  "browser_chrome": "chrome",
+  "browser_firefox": "firefox",
   "url_register_user": "https://automationexercise.com/login",
   "url_add_products": "https://automationexercise.com/products",
   "url_view_and_cart_brands_products": "https://automationexercise.com/products",

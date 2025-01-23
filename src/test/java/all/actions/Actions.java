@@ -1,6 +1,7 @@
 package all.actions;
 
 import all.pages.ContactUsPage;
+import all.pages.SignUpPage;
 import all.utils.ExcelUtils;
 import all.utils.JsonUtils;
 import io.qameta.allure.Allure;
@@ -16,6 +17,7 @@ public class Actions {
 
     // All pages
     ContactUsPage contactUsPage;
+    SignUpPage signUpPage;
     /**
      * Constructor to initialize the Actions class with a WebDriver instance.
      *
@@ -23,6 +25,7 @@ public class Actions {
      */
     public Actions(WebDriver driver) {
         contactUsPage = new ContactUsPage(driver);
+        signUpPage = new SignUpPage(driver);
     }
 
     private void delay () {
@@ -34,67 +37,114 @@ public class Actions {
     }
 
     public boolean isHomePageVisible(String text) {
-        logger.info("Verifying that " + text + " is visible");
         if (!contactUsPage.homePageIsVisible()) {
-            logger.error(text + " is not visible");
+            logger.error("{} is not visible", text);
             return false;
         }
         return true;
     }
 
     public boolean doContactUs() throws IOException {
-        //Allure.step("Starting to perform Contact Us actions");
+        Allure.step("Starting to perform Contact Us actions");
+        logger.info("Starting to perform Contact Us actions");
+
+        Allure.step("Clicking on Contact Us button");
+        logger.info("Clicking on Contact Us button");
+        contactUsPage.clickOnContactUsButton();
+
+        logger.info("Verifying that the text : Get in touch, text is visible");
+        if (!contactUsPage.getInTouchTextIsVisible()) {
+            logger.error("The text : Get in touch text, is not visible");
+            return false;
+        }
+
+        Allure.step("Starting to collect data to fill Form from an Excel file");
+        logger.info("Starting to collect data to fill Form from an Excel file");
         Object[][] excelData = ExcelUtils.readExcelData(JsonUtils.readJsonFromFile("excel_path"));
         if (excelData == null || excelData.length == 0) {
             logger.error("Excel data read error or no data found");
             return false;
         }
-        logger.info("Starting to perform Contact Us actions");
-        if (isHomePageVisible("Home page")) {
-            contactUsPage.clickOnContactUsButton();
-            logger.info("Verifying that the text : Get in touch, text is visible");
-            if (!contactUsPage.getInTouchTextIsVisible()) {
-                logger.error("The text : Get in touch text, is not visible");
-                return false;
-            }
-            // collecting data to fill the Form from an Excel file
-            String name = (String) excelData[0][0];
-            System.out.println(name);
-            String email = (String) excelData[1][0];
-            System.out.println(email);
-            String subject = (String) excelData[2][0];
-            System.out.println(subject);
-            String message = (String) excelData[3][0];
-            System.out.println(message);
-            String file = (String) excelData[4][0];
-            System.out.println(file);
+        // collecting data to fill the Form from an Excel file
+        String name = (String) excelData[0][0];
+        String email = (String) excelData[1][0];
+        String subject = (String) excelData[2][0];
+        String message = (String) excelData[3][0];
+        String file = (String) excelData[4][0];
 
 
-            logger.info("Typing name : {}", name);
-            contactUsPage.typeName(name);
-            logger.info("Typing email : {}", email);
-            delay();
-            contactUsPage.typeEmail(email);
-            logger.info("Typing subject : {}", subject);
-            contactUsPage.typeSubject(subject);
-            logger.info("Typing message : {}", message);
-            contactUsPage.typeMessage(message);
-            logger.info("Uploading file : {}", file);
-            contactUsPage.uploadFile(file);
-            logger.info("clicking submit");
-            contactUsPage.clickSubmit();
-            delay();
-            contactUsPage.clickOnOkButtonInAlert();
-            delay();
-            logger.info("Verifying that the text : Success! Your details have been submitted successfully. is visible");
-            if (!contactUsPage.elementWithTextSuccessIsVisible()) {
-                logger.error("The text : Success! Your details have been submitted successfully. is not visible");
-                return false;
-            }
-            logger.info("clicking on Home page");
-            contactUsPage.clickOnHomePage();
-            delay();
+        Allure.step("Filling the Form");
+        logger.info("Typing name : {}", name);
+        contactUsPage.typeName(name);
+        logger.info("Typing email : {}", email);
+        contactUsPage.typeEmail(email);
+        logger.info("Typing subject : {}", subject);
+        contactUsPage.typeSubject(subject);
+        logger.info("Typing message : {}", message);
+        contactUsPage.typeMessage(message);
+        logger.info("Uploading file : {}", file);
+        contactUsPage.uploadFile(file);
+
+        Allure.step("clicking submit");
+        logger.info("clicking submit");
+        contactUsPage.clickSubmit();
+
+        Allure.step("clicking OK in alert");
+        logger.info("clicking OK in alert");
+        contactUsPage.clickOnOkButtonInAlert();
+
+        Allure.step("Verifying that the text : Success! Your details have been submitted successfully. is visible");
+        logger.info("Verifying that the text : Success! Your details have been submitted successfully. is visible");
+        if (!contactUsPage.elementWithTextSuccessIsVisible()) {
+            logger.error("The text : Success! Your details have been submitted successfully. is not visible");
+            return false;
         }
+        Allure.step("clicking on Home page");
+        logger.info("clicking on Home page");
+        contactUsPage.clickOnHomePage();
+
+        Allure.step("Verifying that Home page is visible");
+        logger.info("Verifying that Home page is visible");
         return isHomePageVisible("Home page");
+    }
+
+    public boolean doSignUp() throws IOException {
+        Allure.step("Starting to perform Sign up actions");
+        logger.info("Starting to perform Sign up actions");
+
+        Allure.step("Clicking on Sign up button");
+        logger.info("Clicking on Sign up button");
+        signUpPage.clickOnSignup_LoginButton();
+
+        logger.info("Verifying that the text : New User Signup!, text is visible");
+        Allure.step("Verifying that the text : New User Signup!, text is visible");
+        if (!signUpPage.newUserSignupTextIsVisible()) {
+            return false;
+        }
+
+        Allure.step("Starting to collect data to fill Form from an Excel file");
+        logger.info("Starting to collect data to fill Form from an Excel file");
+        Object[][] excelData = ExcelUtils.readExcelData(JsonUtils.readJsonFromFile("excel_path"));
+        if (excelData == null || excelData.length == 0) {
+            logger.error("Excel data read error or no data found");
+            return false;
+        }
+        // collecting data to fill the Form from an Excel file
+        String name = (String) excelData[0][0];
+        String email = (String) excelData[1][0];
+
+        Allure.step("Filling the Form");
+        logger.info("Typing name : {}", name);
+        signUpPage.typeName(name);
+        logger.info("Typing email : {}", email);
+        signUpPage.typeEmail(email);
+
+        Allure.step("clicking submit");
+        logger.info("clicking submit");
+        signUpPage.clickingSignUpSubmit();
+
+        Allure.step("Verifying that the error message : Email Address already exist! is visible");
+        logger.info("Verifying that the error message : Email Address already exist! is visible");
+        return signUpPage.errorMessageVisible();
     }
 }

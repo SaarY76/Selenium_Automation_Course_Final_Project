@@ -18,8 +18,8 @@ public class ViewCartBrandsProductsTests {
     @BeforeSuite(alwaysRun = true)
     public void setUp() {
         String URL = JsonUtils.readJsonFromFile("url");
-        String BROWSER = JsonUtils.readJsonFromFile("browser");
-        driver = GenerateDriverAll.initDriver(BROWSER, URL);
+        String BROWSER = JsonUtils.readJsonFromFile("browser_chrome");
+        driver = GenerateDriverAll.initDriver(BROWSER, URL);// navigating to URL
         actions = new Actions(driver);
     }
 

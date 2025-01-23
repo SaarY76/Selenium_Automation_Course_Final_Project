@@ -1,0 +1,105 @@
+21:24:50.509 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Starting to perform Sign up actions
+21:24:50.509 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to perform Contact Us actions
+21:24:50.515 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on Contact Us button
+21:24:50.515 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Clicking on Sign up button
+21:24:50.517 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/login']
+21:24:50.517 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/contact_us']
+21:24:52.395 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Verifying that the text : New User Signup!, text is visible
+21:24:52.423 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Starting to collect data to fill Form from an Excel file
+21:24:53.187 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that the text : Get in touch, text is visible
+21:24:53.268 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to collect data to fill Form from an Excel file
+21:24:54.375 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Typing name : Saar
+21:24:54.376 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='signup-name'] Saar
+21:24:54.377 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Typing name : Saar
+21:24:54.378 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='name'] Saar
+21:24:54.660 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Typing email : saar@gmail.com
+21:24:54.660 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='email'] saar@gmail.com
+21:24:54.674 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Typing email : saar@gmail.com
+21:24:54.675 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='signup-email'] saar@gmail.com
+21:24:54.869 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Typing subject : Help
+21:24:54.870 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='subject'] Help
+21:24:54.903 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - clicking submit
+21:24:54.903 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to click submit in WebElement: By.cssSelector: [data-qa='signup-button']
+21:24:55.026 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Typing message : Add to cart is not working
+21:24:55.026 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='message'] Add to cart is not working
+21:24:55.175 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Uploading file : C:\Users\סער\Personal\IntelliJ_Workspace\FinalProject\src\main\resources\example.txt
+21:24:55.175 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to upload a file to WebElement: By.name: upload_file C:\Users\סער\Personal\IntelliJ_Workspace\FinalProject\src\main\resources\example.txt
+21:24:56.644 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Verifying that the error message : Email Address already exist! is visible
+21:25:00.275 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - clicking submit
+21:25:00.276 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click submit in WebElement: By.cssSelector: [data-qa='submit-button']
+21:25:05.364 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - clicking OK in alert
+21:25:05.365 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click on OK button in Alert dialog
+21:25:10.398 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that the text : Success! Your details have been submitted successfully. is visible
+21:25:10.427 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - clicking on Home page
+21:25:10.427 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.xpath: //a[text()=' Home']
+21:25:17.317 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that Home page is visible
+21:30:58.277 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to perform Contact Us actions
+21:30:58.277 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Starting to perform Sign up actions
+21:30:58.292 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Clicking on Sign up button
+21:30:58.292 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on Contact Us button
+21:30:58.295 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/contact_us']
+21:30:58.295 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/login']
+21:31:00.678 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that the text : Get in touch, text is visible
+21:31:00.743 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to collect data to fill Form from an Excel file
+21:31:00.963 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Verifying that the text : New User Signup!, text is visible
+21:31:01.052 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Starting to collect data to fill Form from an Excel file
+21:31:02.082 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Typing name : Saar
+21:31:02.082 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Typing name : Saar
+21:31:02.082 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='signup-name'] Saar
+21:31:02.082 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='name'] Saar
+21:31:02.288 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Typing email : saar@gmail.com
+21:31:02.289 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='email'] saar@gmail.com
+21:31:02.297 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Typing email : saar@gmail.com
+21:31:02.297 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='signup-email'] saar@gmail.com
+21:31:02.468 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Typing subject : Help
+21:31:02.469 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='subject'] Help
+21:31:02.519 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - clicking submit
+21:31:02.519 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to click submit in WebElement: By.cssSelector: [data-qa='signup-button']
+21:31:02.641 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Typing message : Add to cart is not working
+21:31:02.641 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='message'] Add to cart is not working
+21:31:02.819 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Uploading file : C:\Users\סער\Personal\IntelliJ_Workspace\FinalProject\src\main\resources\example.txt
+21:31:02.820 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to upload a file to WebElement: By.name: upload_file C:\Users\סער\Personal\IntelliJ_Workspace\FinalProject\src\main\resources\example.txt
+21:31:04.121 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Verifying that the error message : Email Address already exist! is visible
+21:31:07.983 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - clicking submit
+21:31:07.984 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click submit in WebElement: By.cssSelector: [data-qa='submit-button']
+21:31:13.083 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - clicking OK in alert
+21:31:13.084 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click on OK button in Alert dialog
+21:31:18.108 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that the text : Success! Your details have been submitted successfully. is visible
+21:31:18.134 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - clicking on Home page
+21:31:18.134 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.xpath: //a[text()=' Home']
+21:31:29.855 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that Home page is visible
+21:33:58.722 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to perform Contact Us actions
+21:33:58.722 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Starting to perform Sign up actions
+21:33:58.728 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on Contact Us button
+21:33:58.729 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Clicking on Sign up button
+21:33:58.731 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/login']
+21:33:58.731 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/contact_us']
+21:34:00.816 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Verifying that the text : New User Signup!, text is visible
+21:34:00.863 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Starting to collect data to fill Form from an Excel file
+21:34:01.412 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that the text : Get in touch, text is visible
+21:34:01.490 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to collect data to fill Form from an Excel file
+21:34:02.530 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Typing name : Saar
+21:34:02.530 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='name'] Saar
+21:34:02.532 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Typing name : Saar
+21:34:02.533 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='signup-name'] Saar
+21:34:02.818 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Typing email : saar@gmail.com
+21:34:02.818 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='signup-email'] saar@gmail.com
+21:34:02.825 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Typing email : saar@gmail.com
+21:34:02.826 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='email'] saar@gmail.com
+21:34:03.058 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - clicking submit
+21:34:03.058 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to click submit in WebElement: By.cssSelector: [data-qa='signup-button']
+21:34:03.064 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Typing subject : Help
+21:34:03.065 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='subject'] Help
+21:34:03.209 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Typing message : Add to cart is not working
+21:34:03.210 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='message'] Add to cart is not working
+21:34:03.363 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Uploading file : C:\Users\סער\Personal\IntelliJ_Workspace\FinalProject\src\main\resources\example.txt
+21:34:03.364 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to upload a file to WebElement: By.name: upload_file C:\Users\סער\Personal\IntelliJ_Workspace\FinalProject\src\main\resources\example.txt
+21:34:05.111 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Verifying that the error message : Email Address already exist! is visible
+21:34:08.447 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - clicking submit
+21:34:08.448 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click submit in WebElement: By.cssSelector: [data-qa='submit-button']
+21:34:13.532 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - clicking OK in alert
+21:34:13.532 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click on OK button in Alert dialog
+21:34:18.561 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that the text : Success! Your details have been submitted successfully. is visible
+21:34:18.589 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - clicking on Home page
+21:34:18.589 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.xpath: //a[text()=' Home']
+21:34:25.897 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that Home page is visible

@@ -13,7 +13,7 @@ public class ContactUsPage extends BasePage{
     }
 
     public boolean homePageIsVisible() {
-        return super.isTabTitleMatch("Automation Exercise");
+        return super.validateElementExist(By.xpath("//a[contains(@style, 'color: orange')]"));
     }
 
     public void clickOnContactUsButton() throws IOException {
