@@ -1,9 +1,9 @@
 package all.tests;
 
 import all.actions.Actions;
+import all.pages.ContactUsPage;
 import all.utils.GenerateDriverAll;
 import all.utils.JsonUtils;
-import all.utils.ScreenshotsUtils;
 import io.qameta.allure.*;
 import io.qameta.allure.testng.Tag;
 import org.openqa.selenium.WebDriver;
@@ -25,9 +25,8 @@ public class ContactUsTests {
     public void setUp() throws IOException {
         String URL = JsonUtils.readJsonFromFile("url");
         String BROWSER = JsonUtils.readJsonFromFile("browser");
-        driver = GenerateDriverAll.initDriver(BROWSER, URL);
+        driver = GenerateDriverAll.initDriver(BROWSER, URL);// navigating to URL
         actions = new Actions(driver);
-        //ScreenshotsUtils.takeFullPageScreenshot(driver);
     }
 
     /**
@@ -44,6 +43,15 @@ public class ContactUsTests {
     @Test(description = "testing the contact us functionality", groups = {"regression", "contactUs"})
     public void contactUs() throws IOException {
         assert actions.doContactUs();
+    }
+
+    /**
+     * Tests that home page is visible
+     */
+    @Test(description = "testing that home page is visible", groups = "contactUs")
+    public void homePageIsVisible() {
+        ContactUsPage contactUsPage = new ContactUsPage(driver);
+        assert contactUsPage.homePageIsVisible();
     }
 
     /**

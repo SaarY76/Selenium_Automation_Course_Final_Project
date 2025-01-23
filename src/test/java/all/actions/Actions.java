@@ -1,6 +1,8 @@
 package all.actions;
 
 import all.pages.ContactUsPage;
+import all.utils.ExcelUtils;
+import all.utils.JsonUtils;
 import io.qameta.allure.Allure;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -31,7 +33,7 @@ public class Actions {
         }
     }
 
-    private boolean isHomePageVisible(String text) {
+    public boolean isHomePageVisible(String text) {
         logger.info("Verifying that " + text + " is visible");
         if (!contactUsPage.homePageIsVisible()) {
             logger.error(text + " is not visible");
@@ -42,6 +44,11 @@ public class Actions {
 
     public boolean doContactUs() throws IOException {
         //Allure.step("Starting to perform Contact Us actions");
+        Object[][] excelData = ExcelUtils.readExcelData(JsonUtils.readJsonFromFile("excel_path"));
+        if (excelData == null || excelData.length == 0) {
+            logger.error("Excel data read error or no data found");
+            return false;
+        }
         logger.info("Starting to perform Contact Us actions");
         if (isHomePageVisible("Home page")) {
             contactUsPage.clickOnContactUsButton();
@@ -50,16 +57,30 @@ public class Actions {
                 logger.error("The text : Get in touch text, is not visible");
                 return false;
             }
-            logger.info("Typing name");
-            contactUsPage.typeName("Saar");
-            logger.info("Typing email");
-            contactUsPage.typeEmail("saar@gmail.com");
-            logger.info("Typing subject");
-            contactUsPage.typeSubject("Help");
-            logger.info("Typing message");
-            contactUsPage.typeMessage("Add to cart is not working");
-            logger.info("Uploading file");
-            contactUsPage.uploadFile("C:\\Users\\סער\\Personal\\IntelliJ_Workspace\\FinalProject\\src\\main\\resources\\example.txt");
+            // collecting data to fill the Form from an Excel file
+            String name = (String) excelData[0][0];
+            System.out.println(name);
+            String email = (String) excelData[1][0];
+            System.out.println(email);
+            String subject = (String) excelData[2][0];
+            System.out.println(subject);
+            String message = (String) excelData[3][0];
+            System.out.println(message);
+            String file = (String) excelData[4][0];
+            System.out.println(file);
+
+
+            logger.info("Typing name : {}", name);
+            contactUsPage.typeName(name);
+            logger.info("Typing email : {}", email);
+            delay();
+            contactUsPage.typeEmail(email);
+            logger.info("Typing subject : {}", subject);
+            contactUsPage.typeSubject(subject);
+            logger.info("Typing message : {}", message);
+            contactUsPage.typeMessage(message);
+            logger.info("Uploading file : {}", file);
+            contactUsPage.uploadFile(file);
             logger.info("clicking submit");
             contactUsPage.clickSubmit();
             delay();
