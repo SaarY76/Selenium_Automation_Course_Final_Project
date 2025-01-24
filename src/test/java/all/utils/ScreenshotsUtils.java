@@ -4,7 +4,7 @@ import io.qameta.allure.Allure;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -34,14 +34,11 @@ public class ScreenshotsUtils {
         // Construct the destination file path
         Path destinationFilePath = FileSystems.getDefault().getPath(SCREENSHOT_DIR, sanitizedTitle);
 
-        // Check if the file already exists and delete it if necessary
-        if (Files.exists(destinationFilePath)) {
-            Files.delete(destinationFilePath);
-            System.out.println("Existing screenshot deleted: " + destinationFilePath.toString());
+        // Check if the file not exists and if so it adds it to the directory
+        if (!Files.exists(destinationFilePath)) {
+            // Save the new screenshot
+            Files.copy(screenshotFile.toPath(), destinationFilePath);
         }
-
-        // Save the new screenshot
-        Files.copy(screenshotFile.toPath(), destinationFilePath);
 
         // Attach the screenshot to Allure report
         try (InputStream is = Files.newInputStream(destinationFilePath)) {

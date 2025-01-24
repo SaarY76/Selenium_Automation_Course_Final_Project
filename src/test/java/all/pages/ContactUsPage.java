@@ -1,26 +1,14 @@
 package all.pages;
 
-import all.utils.ScreenshotsUtils;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import java.io.IOException;
 
 public class ContactUsPage extends BasePage{
 
     public ContactUsPage(WebDriver driver) {
         super(driver, 10);
     }
-
-    public boolean homePageIsVisible() {
-        return super.validateElementExist(By.xpath("//a[contains(@style, 'color: orange')]"));
-    }
-
-    public void clickOnContactUsButton() throws IOException {
-        super.click(By.cssSelector("a[href='/contact_us']"));
-        ScreenshotsUtils.takeFullPageScreenshot(driver);
-    }
-
 
     public boolean getInTouchTextIsVisible() {
         return super.validateElementExist(By.xpath("//h2[@class='title text-center' and text()='Get In Touch']"));

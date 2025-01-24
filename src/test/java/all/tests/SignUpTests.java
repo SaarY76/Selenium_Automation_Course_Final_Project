@@ -40,7 +40,7 @@ public class SignUpTests {
     }
 
     /**
-     * Tests the contact us functionality.
+     * Tests the Sign-up functionality.
      */
     @Feature("Sign up flow")
     @Story("Sign up")

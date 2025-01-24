@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-@Epic("View & Cart Brand Products")
+@Epic("View & Cart Brand Products test Suite")
 public class ViewCartBrandsProductsTests {
     WebDriver driver;
     Actions actions;
@@ -40,17 +40,17 @@ public class ViewCartBrandsProductsTests {
     }
 
     /**
-     * Tests the contact us functionality.
+     * Tests the View & Cart Brand Products functionality.
      */
     @Feature("View & Cart Brand Products flow")
     @Story("View & Cart Brand Products")
-    @Description("Test the Sign up functionality")
+    @Description("Test the View & Cart Brand Products functionality")
     @Link("https://automationexercise.com/products")
     @Tag("View & Cart Brand Products")
     @Owner("Saar, Alina")
     @Severity(SeverityLevel.NORMAL)
     @Step("View & Cart Brand Products")
-    @Test(dependsOnMethods = "homePageIsVisible", description = "View & Cart Brand Products functionality", groups = {"regression", "view_and_cart_products_functionality"})
+    @Test(dependsOnMethods = "homePageIsVisible", description = "View & Cart Brand Products functionality", groups = {"regression", "view_and_cart_brand_products"})
     public void viewAndCartBrandProducts() throws IOException {
         assert actions.doViewAndCartBrandProductsFunctionality();
     }

@@ -1,20 +1,15 @@
 package all.pages;
 
-import all.utils.ScreenshotsUtils;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import java.io.IOException;
+
 
 public class SignUpPage extends BasePage{
 
     public SignUpPage(WebDriver driver) {
         super(driver, 10);
-    }
-
-    public void clickOnSignup_LoginButton() throws IOException {
-        super.click(By.cssSelector("a[href='/login']"));
-        ScreenshotsUtils.takeFullPageScreenshot(driver);
     }
 
     public boolean newUserSignupTextIsVisible() {

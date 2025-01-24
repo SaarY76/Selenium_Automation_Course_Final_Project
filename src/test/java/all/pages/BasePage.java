@@ -1,13 +1,15 @@
 package all.pages;
 
+import all.utils.ScreenshotsUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
+
+import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
@@ -44,6 +46,20 @@ public class BasePage {
     }
 
     /**
+     * Clicks on the element located by the given locator.
+     *
+     * @param locator the By locator of the element to be clicked
+     */
+    public void clickOnElement(By locator) {
+        logger.info("Going to click WebElement: {}", locator);
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
+        WebElement element = driver.findElement(locator);
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).click().perform();
+    }
+
+
+    /**
      * Types the given text into the element located by the given locator.
      *
      * @param locator the By locator of the element
@@ -70,6 +86,35 @@ public class BasePage {
         // Find all elements matching the locator
         List<WebElement> elements = driver.findElements(locator);
         return !elements.isEmpty();
+    }
+
+    /**
+     * Getting the number of elements with the same locator
+     *
+     * @param locator the By locator of the elements
+     * @return the int value of elements found
+     */
+    public int numberOfElementsWithSameLocator(By locator) {
+        // Wait for the page to load completely
+        wait.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
+
+        // Find all elements matching the locator
+        List<WebElement> elements = driver.findElements(locator);
+        return elements.size();
+    }
+
+    /**
+     * Getting the elements with the same locator
+     *
+     * @param locator the By locator of the elements
+     * @return the List of elements found
+     */
+    public List<WebElement> elementsWithSameLocator(By locator) {
+        // Wait for the page to load completely
+        wait.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
+
+        // Find all elements matching the locator
+        return driver.findElements(locator);
     }
 
     /**
@@ -120,6 +165,22 @@ public class BasePage {
     }
 
     /**
+     * Scrolls the to the bottom of the web page
+     */
+    public void scrollToBottom() {
+        // Use JavaScript to scroll to the bottom of the page
+        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);");
+    }
+
+    /**
+     * Scrolls the to the top of the web page
+     */
+    public void scrollToTop() {
+        // Use JavaScript to scroll to the top of the page
+        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0);");
+    }
+
+    /**
      * Uploads a file to an input element.
      *
      * @param locator  The locator used to find the file input element.
@@ -156,6 +217,22 @@ public class BasePage {
 
         // Accept the alert by clicking "OK"
         alert.accept();
+    }
+
+    /**
+     * The function does hover on a specific web element using a locator
+     * @param locator - The locator used to find the submit button element.
+     */
+    public void hoverOnElement(By locator) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        WebElement webElement = driver.findElement(locator);
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(webElement).perform();
+    }
+
+    public void takeScreenshotOfCurrentPage() throws IOException {
+        ScreenshotsUtils.takeFullPageScreenshot(driver);
     }
 
 }
