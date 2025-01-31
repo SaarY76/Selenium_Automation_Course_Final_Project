@@ -14,7 +14,7 @@ import java.util.Map;
 public class ApiTests {
 
     @Feature("API testing")
-    @Link("https://automationexercise.com/contact_us")
+    @Link("https://automationexercise.com/api/productsList")
     @Test(description = "The test checks the API calling of getting all of the products from the website", groups = {"api"})
     public void testGetAllProductsAPI() {
         // Given - Set the base URL
