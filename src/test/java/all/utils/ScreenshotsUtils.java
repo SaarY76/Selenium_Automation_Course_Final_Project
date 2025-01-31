@@ -18,6 +18,11 @@ public class ScreenshotsUtils {
 
     private static final String SCREENSHOT_DIR = "screenshots";
 
+    /**
+     * The function is doing a screenshot of the current web page
+     * @param driver - the selenium driver
+     * @throws IOException - if there is an IO exception it throws it
+     */
     public static void takeFullPageScreenshot(WebDriver driver) throws IOException {
         // Capturing the screenshot of the entire page
         File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

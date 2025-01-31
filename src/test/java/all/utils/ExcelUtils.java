@@ -8,6 +8,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 public class ExcelUtils {
+
+    /**
+     * The function collects the data from an Excel file
+     * @param filePath - the filepath of the Excel folder
+     * @return - An Object 2D array that first is the row and second is the column
+     */
     public static Object[][] readExcelData(String filePath) {
         try {
             FileInputStream fis = new FileInputStream(filePath);

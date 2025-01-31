@@ -3,7 +3,11 @@
     <test name="Regression Tests">
 <groups>
     <run>
-        <include name="regression"/>
+        <include name="contactUs"/>
+        <include name="signUp"/>
+        <include name="view_and_cart_brand_products"/>
+        <include name="add_products"/>
+        <include name="scroll_up"/>
     </run>
 </groups>
         <packages>

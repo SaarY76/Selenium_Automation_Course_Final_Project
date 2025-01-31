@@ -47,9 +47,9 @@ public class Actions {
         }
     }
 
-    public boolean isHomePageVisible(String text) {
+    public boolean isHomePageVisible() {
         if (!homePage.homePageIsVisible()) {
-            logger.error("{} is not visible", text);
+            logger.error("Home page is not visible");
             return false;
         }
         return true;
@@ -128,7 +128,7 @@ public class Actions {
 
         Allure.step("Verifying that Home page is visible");
         logger.info("Verifying that Home page is visible");
-        return isHomePageVisible("Home page");
+        return isHomePageVisible();
     }
 
     /**
@@ -391,6 +391,8 @@ public class Actions {
             return false;
         }
 
+        Allure.step("Scrolling to the top of the page");
+        logger.info("Scrolling to the top of the page");
         homePage.scrollToTheTopOfPage();
         delay();
 

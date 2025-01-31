@@ -30,6 +30,10 @@ public class CheckoutPage extends BasePage{
         return super.numberOfElementsWithSameLocator(By.cssSelector("tbody tr"));
     }
 
+    /**
+     * The function collects the prices of the products in the cart
+     * @return - List of Doubles of the prices of the products in the cart
+     */
     public List<Double> getPricesOfProductsInCart() {
         List<WebElement> pElements = super.elementsWithSameLocator(By.className("cart_price"));
         List<Double> prices = new ArrayList<>();

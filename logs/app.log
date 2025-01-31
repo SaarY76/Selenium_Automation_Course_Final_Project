@@ -1,79 +1,159 @@
-20:20:31.221 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to perform add Products actions
-20:20:31.221 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Taking a screenshot of current page
-20:20:31.221 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Starting to perform Sign up actions
-20:20:31.229 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Taking a screenshot of current page
-20:20:31.221 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Starting to perform View & Cart Brand Products actions
-20:20:31.230 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Taking a screenshot of current page
-20:20:31.221 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Starting to perform Contact Us actions
-20:20:31.229 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Taking a screenshot of current page
-20:20:31.234 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Taking a screenshot of current page
-20:20:32.042 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Clicking on Contact Us button
-20:20:32.044 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Clicking on Sign up button
-20:20:32.045 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Scrolling to the bottom of the page
-20:20:32.044 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on Products button
-20:20:32.046 [TestNG-test-Regression Tests-3] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/contact_us']
-20:20:32.047 [TestNG-test-Regression Tests-5] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/login']
-20:20:32.046 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/products']
-20:20:32.146 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Clicking on Products button
-20:20:32.146 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Verifying that 'SUBSCRIPTION' is visible
-20:20:32.146 [TestNG-test-Regression Tests-6] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/products']
-20:20:32.287 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Verifying that 'Full-Fledged practice website for Automation Engineers' is visible
-20:20:36.465 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Taking a screenshot of current page
-20:20:36.490 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Taking a screenshot of current page
-20:20:36.613 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Taking a screenshot of current page
-20:20:36.806 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Verifying that the text : New User Signup!, is visible
-20:20:36.842 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Verifying that the div : Brands, is visible
-20:20:36.867 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Starting to collect data from an Excel file
-20:20:36.868 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Typing name : Saar
-20:20:36.869 [TestNG-test-Regression Tests-5] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='signup-name'] Saar
-20:20:36.889 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Taking a screenshot of current page
-20:20:36.937 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Starting to collect data from an Excel file
-20:20:36.938 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Clicking on Polo button
-20:20:36.939 [TestNG-test-Regression Tests-6] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/brand_products/Polo']
-20:20:37.201 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Verifying that the text : Get in touch, text is visible
-20:20:37.306 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Starting to collect data to from an Excel file
-20:20:37.307 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Typing name : Saar
-20:20:37.307 [TestNG-test-Regression Tests-3] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='name'] Saar
-20:20:37.672 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Scrolling to first product
-20:20:37.846 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Hovering on first product
-20:20:38.141 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Typing email : saar@gmail.com
-20:20:38.141 [TestNG-test-Regression Tests-5] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='signup-email'] saar@gmail.com
-20:20:38.848 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on add to cart on first product
-20:20:38.850 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[data-product-id='1']
-20:20:39.109 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Typing email : saar@gmail.com
-20:20:39.110 [TestNG-test-Regression Tests-3] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='email'] saar@gmail.com
-20:20:39.580 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.xpath: //button[text()='Continue Shopping']
-20:20:39.885 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - clicking submit
-20:20:39.885 [TestNG-test-Regression Tests-5] INFO  all.pages.BasePage - Going to click submit in WebElement: By.cssSelector: [data-qa='signup-button']
-20:20:40.729 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Typing subject : Help
-20:20:40.730 [TestNG-test-Regression Tests-3] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='subject'] Help
-20:20:41.700 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Scrolling to second product
-20:20:41.844 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Verifying that the text : Polo, is visible
-20:20:41.938 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Clicking on Babyhug button
-20:20:41.938 [TestNG-test-Regression Tests-6] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/brand_products/Babyhug']
-20:20:42.116 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Hovering on second product
-20:20:43.540 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Typing message : Add to cart is not working
-20:20:43.541 [TestNG-test-Regression Tests-3] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='message'] Add to cart is not working
-20:20:44.219 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on add to cart on second product
-20:20:44.219 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[data-product-id='2']
-20:20:44.577 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Verifying that the error message : Email Address already exist! is visible
-20:20:44.921 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on view cart
-20:20:44.922 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.linkText: View Cart
-20:20:45.062 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Uploading file : C:\Users\סער\Personal\IntelliJ_Workspace\FinalProject\src\main\resources\example.txt
-20:20:45.064 [TestNG-test-Regression Tests-3] INFO  all.pages.BasePage - Going to upload a file to WebElement: By.name: upload_file C:\Users\סער\Personal\IntelliJ_Workspace\FinalProject\src\main\resources\example.txt
-20:20:45.560 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - clicking submit
-20:20:45.561 [TestNG-test-Regression Tests-3] INFO  all.pages.BasePage - Going to click submit in WebElement: By.cssSelector: [data-qa='submit-button']
-20:20:46.002 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - clicking OK in alert
-20:20:46.003 [TestNG-test-Regression Tests-3] INFO  all.pages.BasePage - Going to click on OK button in Alert dialog
-20:20:46.033 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Verifying that the text : Success! Your details have been submitted successfully. is visible
-20:20:46.086 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - clicking on Home page
-20:20:46.086 [TestNG-test-Regression Tests-3] INFO  all.pages.BasePage - Going to click WebElement: By.xpath: //a[text()=' Home']
-20:20:46.874 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Verifying that the text : Babyhug, is visible
-20:20:48.305 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Taking a screenshot of current page
-20:20:48.677 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that the cart is not empty
-20:20:48.740 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to collect data from an Excel file
-20:20:48.741 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying the prices of the products in cart
-20:20:48.855 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to collect data from an Excel file
-20:20:48.855 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that the two products in cart
-20:20:48.895 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying the total price of the products in cart
-20:20:49.037 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Verifying that Home page is visible
+20:01:06.402 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Starting to perform View & Cart Brand Products actions
+20:01:06.410 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Taking a screenshot of current page
+20:01:06.402 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Starting to perform Contact Us actions
+20:01:06.415 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Taking a screenshot of current page
+20:01:06.402 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to perform add Products actions
+20:01:06.402 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Starting to perform Sign up actions
+20:01:06.415 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Taking a screenshot of current page
+20:01:06.415 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Taking a screenshot of current page
+20:01:06.415 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Taking a screenshot of current page
+20:01:07.332 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Clicking on Sign up button
+20:01:07.332 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Clicking on Contact Us button
+20:01:07.332 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on Products button
+20:01:07.332 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Clicking on Products button
+20:01:07.332 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Scrolling to the bottom of the page
+20:01:07.334 [TestNG-test-Regression Tests-5] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/products']
+20:01:07.334 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/products']
+20:01:07.334 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/contact_us']
+20:01:07.334 [TestNG-test-Regression Tests-4] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/login']
+20:01:09.446 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Verifying that 'SUBSCRIPTION' is visible
+20:01:11.930 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Verifying that 'Full-Fledged practice website for Automation Engineers' is visible
+20:01:11.947 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Taking a screenshot of current page
+20:01:12.795 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Verifying that the text : Get in touch, text is visible
+20:01:12.819 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Taking a screenshot of current page
+20:01:13.178 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Starting to collect data to from an Excel file
+20:01:13.179 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Typing name : Saar
+20:01:13.180 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='name'] Saar
+20:01:13.469 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Taking a screenshot of current page
+20:01:13.762 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Taking a screenshot of current page
+20:01:14.003 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Verifying that the text : New User Signup!, is visible
+20:01:14.581 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Starting to collect data from an Excel file
+20:01:14.582 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Typing name : Saar
+20:01:14.582 [TestNG-test-Regression Tests-4] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='signup-name'] Saar
+20:01:15.202 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Verifying that the div : Brands, is visible
+20:01:16.261 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Starting to collect data from an Excel file
+20:01:16.263 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Clicking on Polo button
+20:01:16.265 [TestNG-test-Regression Tests-5] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/brand_products/Polo']
+20:01:16.418 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Scrolling to first product
+20:01:16.435 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Typing email : saar@gmail.com
+20:01:16.435 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='email'] saar@gmail.com
+20:01:16.678 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Hovering on first product
+20:01:17.052 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Typing email : saar@gmail.com
+20:01:17.053 [TestNG-test-Regression Tests-4] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='signup-email'] saar@gmail.com
+20:01:17.164 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on add to cart on first product
+20:01:17.164 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[data-product-id='1']
+20:01:17.394 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Typing subject : Help
+20:01:17.396 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='subject'] Help
+20:01:17.644 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.xpath: //button[text()='Continue Shopping']
+20:01:17.786 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - clicking submit
+20:01:17.786 [TestNG-test-Regression Tests-4] INFO  all.pages.BasePage - Going to click submit in WebElement: By.cssSelector: [data-qa='signup-button']
+20:01:17.946 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Typing message : Add to cart is not working
+20:01:17.947 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='message'] Add to cart is not working
+20:01:18.735 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Uploading file : C:\Users\סער\Personal\IntelliJ_Workspace\FinalProject\src\main\resources\example.txt
+20:01:18.736 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to upload a file to WebElement: By.name: upload_file C:\Users\סער\Personal\IntelliJ_Workspace\FinalProject\src\main\resources\example.txt
+20:01:19.101 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - clicking submit
+20:01:19.102 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to click submit in WebElement: By.cssSelector: [data-qa='submit-button']
+20:01:19.347 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - clicking OK in alert
+20:01:19.347 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to click on OK button in Alert dialog
+20:01:19.384 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Verifying that the text : Success! Your details have been submitted successfully. is visible
+20:01:19.534 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - clicking on Home page
+20:01:19.535 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to click WebElement: By.xpath: //a[text()=' Home']
+20:01:19.599 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Scrolling to second product
+20:01:19.816 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Hovering on second product
+20:01:20.239 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Verifying that the error message : Email Address already exist! is visible
+20:01:20.265 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on add to cart on second product
+20:01:20.266 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[data-product-id='2']
+20:01:20.446 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Verifying that the text : Polo, is visible
+20:01:22.123 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on view cart
+20:01:22.126 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.linkText: View Cart
+20:01:23.928 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Verifying that Home page is visible
+20:01:24.283 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Clicking on Babyhug button
+20:01:24.284 [TestNG-test-Regression Tests-5] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/brand_products/Babyhug']
+20:01:26.584 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Taking a screenshot of current page
+20:01:27.564 [TestNG-test-Regression Tests-5] INFO  all.actions.Actions - Verifying that the text : Babyhug, is visible
+20:01:27.566 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that the cart is not empty
+20:01:27.653 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to collect data from an Excel file
+20:01:27.654 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying the prices of the products in cart
+20:01:27.819 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to collect data from an Excel file
+20:01:27.820 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that the two products in cart
+20:01:27.857 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying the total price of the products in cart
+20:16:02.161 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Starting to perform Contact Us actions
+20:16:02.169 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Starting to perform Sign up actions
+20:16:02.170 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Taking a screenshot of current page
+20:16:02.161 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to perform add Products actions
+20:16:02.175 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Taking a screenshot of current page
+20:16:02.176 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Taking a screenshot of current page
+20:16:02.189 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Taking a screenshot of current page
+20:16:03.655 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on Products button
+20:16:03.656 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Clicking on Contact Us button
+20:16:03.657 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Scrolling to the bottom of the page
+20:16:03.657 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Clicking on Sign up button
+20:16:03.658 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/contact_us']
+20:16:03.658 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/products']
+20:16:03.658 [TestNG-test-Regression Tests-4] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/login']
+20:16:05.787 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Verifying that 'SUBSCRIPTION' is visible
+20:16:07.765 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Scrolling to the top of the page
+20:16:07.950 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Taking a screenshot of current page
+20:16:08.595 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Taking a screenshot of current page
+20:16:08.673 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Taking a screenshot of current page
+20:16:08.890 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Verifying that the text : Get in touch, text is visible
+20:16:08.969 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Verifying that the text : New User Signup!, is visible
+20:16:08.974 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Starting to collect data to from an Excel file
+20:16:08.975 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Typing name : Saar
+20:16:08.976 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='name'] Saar
+20:16:09.038 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Scrolling to first product
+20:16:09.075 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Starting to collect data from an Excel file
+20:16:09.076 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Typing name : Saar
+20:16:09.080 [TestNG-test-Regression Tests-4] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='signup-name'] Saar
+20:16:09.180 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Hovering on first product
+20:16:09.237 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Starting to perform View & Cart Brand Products actions
+20:16:09.241 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Taking a screenshot of current page
+20:16:09.665 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Clicking on Products button
+20:16:09.665 [TestNG-test-Regression Tests-3] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/products']
+20:16:09.742 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on add to cart on first product
+20:16:09.743 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[data-product-id='1']
+20:16:09.932 [TestNG-test-Regression Tests-6] INFO  all.actions.Actions - Verifying that 'Full-Fledged practice website for Automation Engineers' is visible
+20:16:10.263 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Typing email : saar@gmail.com
+20:16:10.265 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='email'] saar@gmail.com
+20:16:10.423 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Typing email : saar@gmail.com
+20:16:10.424 [TestNG-test-Regression Tests-4] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='signup-email'] saar@gmail.com
+20:16:10.682 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.xpath: //button[text()='Continue Shopping']
+20:16:11.203 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - clicking submit
+20:16:11.203 [TestNG-test-Regression Tests-4] INFO  all.pages.BasePage - Going to click submit in WebElement: By.cssSelector: [data-qa='signup-button']
+20:16:11.215 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Typing subject : Help
+20:16:11.215 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='subject'] Help
+20:16:12.171 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Scrolling to second product
+20:16:12.561 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Hovering on second product
+20:16:12.598 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Typing message : Add to cart is not working
+20:16:12.599 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to send keys to WebElement: By.cssSelector: [data-qa='message'] Add to cart is not working
+20:16:13.235 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on add to cart on second product
+20:16:13.236 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[data-product-id='2']
+20:16:13.780 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Clicking on view cart
+20:16:13.780 [TestNG-test-Regression Tests-1] INFO  all.pages.BasePage - Going to click WebElement: By.linkText: View Cart
+20:16:13.798 [TestNG-test-Regression Tests-4] INFO  all.actions.Actions - Verifying that the error message : Email Address already exist! is visible
+20:16:13.924 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Uploading file : C:\Users\סער\Personal\IntelliJ_Workspace\FinalProject\src\main\resources\example.txt
+20:16:13.927 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to upload a file to WebElement: By.name: upload_file C:\Users\סער\Personal\IntelliJ_Workspace\FinalProject\src\main\resources\example.txt
+20:16:14.175 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Taking a screenshot of current page
+20:16:14.626 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - clicking submit
+20:16:14.626 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to click submit in WebElement: By.cssSelector: [data-qa='submit-button']
+20:16:14.994 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - clicking OK in alert
+20:16:14.994 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to click on OK button in Alert dialog
+20:16:15.133 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Verifying that the text : Success! Your details have been submitted successfully. is visible
+20:16:15.510 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - clicking on Home page
+20:16:15.510 [TestNG-test-Regression Tests-2] INFO  all.pages.BasePage - Going to click WebElement: By.xpath: //a[text()=' Home']
+20:16:15.747 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Verifying that the div : Brands, is visible
+20:16:15.879 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Starting to collect data from an Excel file
+20:16:15.882 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Clicking on Polo button
+20:16:15.884 [TestNG-test-Regression Tests-3] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/brand_products/Polo']
+20:16:19.556 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Verifying that the text : Polo, is visible
+20:16:21.244 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Taking a screenshot of current page
+20:16:21.768 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that the cart is not empty
+20:16:21.933 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to collect data from an Excel file
+20:16:21.934 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying the prices of the products in cart
+20:16:22.671 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Clicking on Babyhug button
+20:16:22.672 [TestNG-test-Regression Tests-3] INFO  all.pages.BasePage - Going to click WebElement: By.cssSelector: a[href='/brand_products/Babyhug']
+20:16:22.702 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Starting to collect data from an Excel file
+20:16:22.703 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying that the two products in cart
+20:16:22.968 [TestNG-test-Regression Tests-1] INFO  all.actions.Actions - Verifying the total price of the products in cart
+20:16:25.732 [TestNG-test-Regression Tests-3] INFO  all.actions.Actions - Verifying that the text : Babyhug, is visible
+20:16:25.942 [TestNG-test-Regression Tests-2] INFO  all.actions.Actions - Verifying that Home page is visible

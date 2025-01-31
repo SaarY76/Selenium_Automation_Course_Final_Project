@@ -34,7 +34,7 @@ public class ContactUsTests {
     @Step("Home page first validation")
     @Test(description = "Testing Home page visibility")
     public void homePageIsVisible() {
-        assert  actions.isHomePageVisible(" Home");
+        assert  actions.isHomePageVisible();
     }
 
     /**

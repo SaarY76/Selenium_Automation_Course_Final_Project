@@ -16,7 +16,7 @@ public class HomePage extends BasePage{
     }
 
     public boolean homePageIsVisible() {
-        return super.validateElementExist(By.xpath("//a[contains(@style, 'color: orange')]"));
+        return super.validateElementExist(By.xpath("//a[contains(@style, 'color: orange') and contains(text(), ' Home')]"));
     }
 
     public void clickOnSignup_LoginButton() {
